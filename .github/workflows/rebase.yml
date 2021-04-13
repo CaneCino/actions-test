@@ -34,10 +34,3 @@ jobs:
             Rebase status: ${{ job.status }}!
           reactions: '${{ steps.rebase_reaction.outputs.reaction }}'
         if: always()
-
-  always_job:
-    name: Always run job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Always run
-        run: echo "This job is used to prevent the workflow to fail when all other jobs are skipped."
