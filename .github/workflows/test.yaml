@@ -12,4 +12,6 @@ jobs:
     steps:
       - name: Issue the greeting comment
         run: |
-          echo "Henlooo"
+          echo "Henlooo $mysecret"
+        env:
+            mysecret: ${{ secrets.MYSECRET }}
