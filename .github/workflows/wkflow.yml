@@ -1,6 +1,7 @@
 name: Greeting
 on:
-  workflow_run
+  workflow_run:
+    workflows: ["Greeting"]
 
 jobs:
   greeting:
