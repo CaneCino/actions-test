@@ -1,0 +1,15 @@
+name: Greeting
+on:
+  workflow_run
+
+jobs:
+  greeting:
+    name: Print workflow info
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print workflow info
+        run: |
+          echo "Workflow running $mysecret"
+        env:
+            mysecret: ${{ secrets.MYSECRET }}
