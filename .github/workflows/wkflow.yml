@@ -1,4 +1,4 @@
-name: Greeting
+name: Wkflow
 on:
   workflow_run:
     workflows: ["Greeting"]
